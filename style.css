@@ -1,0 +1,337 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+ }  
+
+ nav{
+      position: fixed;
+      top:0;
+      left: 0;
+      width:100%;
+      height: 100px;
+      padding: 10px 90px;
+      box-sizing: border-box;
+      background: rgb(255, 166, 1);
+ }
+ nav .logo{
+   padding: 22px 20px;
+   height: 80px;
+   float: left;
+   font-size: 25px;
+   font-weight: bold;
+   text-transform: uppercase;
+   color: #fff;
+ }
+ nav ul{
+   list-style:none ;
+   float: right;
+   margin: 0;
+   padding: 0;
+   display: flex;
+ }
+ nav ul li a{
+   line-height: 80px;
+   color: #fff;
+   padding: 12px 30px;
+   text-decoration: none;
+   font-size: 17px;
+   font-weight: bold;
+   text-transform:uppercase ;
+ }
+ nav ul li a:hover{
+   background:rgb(255, 196, 0);
+   border-radius: 15px;
+ }
+
+  *{
+    box-sizing: border-box;
+  }
+  body{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #21c7dd;
+    font-family: 'Lato' !important;
+    
+  }
+  .search-box{
+    width: fit-content;
+    left: 380px;
+    top: -120px;
+    height: fit-content;
+    position: relative;
+  }
+  .input-search{
+    height: 55px;
+    width: 30px;
+    border-style: none;
+    padding: 20px 40px;
+    font-size: 15px;
+    letter-spacing: 2px;
+    outline: none;
+    border-radius: 80px;
+    transition: all .5s ease-in-out;
+    background-color: #22a6b3;
+    padding-right: 10px;
+    color:#fff;
+  }
+  .input-search::placeholder{
+    color:rgba(255,255,255,.5);
+    font-size: 15px;
+    letter-spacing: 5px;
+    font-weight: 100;
+  }
+  .btn-search{
+    width: 45px;
+    height: 35px;
+    left: 53px;
+    border-style: none;
+    font-size: 18px;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50%;
+    position: relative;
+    color:#ffffff ;
+    background-color:transparent;
+    pointer-events: painted;  
+  }
+  .btn-search:focus ~ .input-search{
+    width: 250px;
+    border-radius: 0px;
+    background-color: transparent;
+    border-bottom:1px solid rgba(0, 0, 0, 0.5);
+    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+  }
+  .input-search:focus{
+    width: 300px;
+    border-radius: 0px;
+    background-color: transparent;
+    border-bottom:1px solid rgba(8, 8, 8, 0.5);
+    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+  }
+  
+  body{
+    background-image: url(https://images.unsplash.com/photo-1499028344343-cd173ffc68a9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1500&q=80);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  body {
+    font-family: 'Fira Code', monospace;
+    width: 80%;
+    height: 80%;
+    font-size: 16px;
+  }
+  
+  main {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  p {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    font-size: 3rem;
+    background: linear-gradient(to bottom, rgb(243, 0, 0), rgb(231, 209, 8) 60%, rgb(250, 6, 26) 60%, rgb(250, 8, 8) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-repeat: no-repeat;
+    transition: background 0.2s ease-out;
+    white-space: nowrap;
+  }
+  
+  span {
+    position: relative;
+  }
+  
+  span:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 15px;
+    width: 400px;
+    bottom: 20px;
+    border-radius: 15px;
+    transition: all 0.2s ease-out;
+  }
+  
+  p:hover {
+    background-position: 0 11px;
+  }
+  
+  span:hover:before {
+    transform: translateY(10px)
+  }
+
+  .container {
+    width: 400px;
+    height: 100px;
+    position: absolute;
+    left: -620%;
+    top: 350%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .center {
+    width: 180px;
+    height: 10px;
+    position: relative;
+  }
+  
+  .btn {
+    width: 180px;
+    height: 50px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #6306dd;
+    outline: none;
+    transition: 1s ease-in-out;
+  }
+  
+  svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    fill: none;
+    stroke: #fff;
+    stroke-dasharray: 150 480;
+    stroke-dashoffset: 150;
+    transition: 1s ease-in-out;
+  }
+  
+  .btn:hover {
+    transition: 1s ease-in-out;
+    background: #f14704;
+  }
+  
+  .btn:hover svg {
+    stroke-dashoffset: -480;
+  }
+  
+  .btn span {
+    color: rgb(231, 199, 18);
+    font-size: 18px;
+    font-weight: 100;
+  }
+  
+
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}    
+
+.title {
+  overflow: hidden;
+  height: auto;
+}
+
+h1 {
+    font-size: 40px;
+    color: var(--contrast-color);
+    margin-bottom: 20px;
+    transform: translateY(100px);
+    animation: slideUp .8s ease forwards .5s;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(500px) scale(.2);
+  }
+  100% {
+    transform: translateX(0px) scale(1);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(300px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes expand {
+  0% {
+    transform: translateX(1400px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.about-section{
+  background: url(pic.jpg) no-repeat left;
+  background-size: 55%;
+  background-color: #fdfdfd;
+  overflow: hidden;
+  padding: 100px 0;
+}
+
+.inner-container{
+  width: 55%;
+  float: right;
+  background-color: #fdfdfd;
+  padding: 150px;
+}
+
+.inner-container h1{
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.text{
+  font-size: 13px;
+  color: #545454;
+  line-height: 30px;
+  text-align: justify;
+  margin-bottom: 40px;
+}
+
+.skills{
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+@media screen and (max-width:1200px){
+  .inner-container{
+      padding: 80px;
+  }
+}
+
+@media screen and (max-width:1000px){
+  .about-section{
+      background-size: 100%;
+      padding: 100px 40px;
+  }
+  .inner-container{
+      width: 100%;
+  }
+}
+
+@media screen and (max-width:600px){
+  .about-section{
+      padding: 0;
+  }
+  .inner-container{
+      padding: 60px;
+  }
+}
